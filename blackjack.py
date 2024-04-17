@@ -51,7 +51,7 @@ def points(hand:list):
 
     return points
 
-def result(hand=list):
+def result(hand:list):
     points = points(hand)
 
     if points == 21:
@@ -60,8 +60,8 @@ def result(hand=list):
     if points>21:
         return 'Lost'
     
-def show_result():
-    turn = result(hand_user)
+def show_result(hand:list):
+    turn = result(hand)
     if turn:
         print(result)
         return True
